@@ -1,0 +1,17 @@
+{
+  "name": "wiki-scrape",
+  "version": "1.0.0",
+  "description": "Scraping element pages to store element properties",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",  
+    "client": "npm start --prefix client",  
+    "server": "node server/server.js",  
+    "dev": "concurrently \"npm run client\" \"npm run server\"", 
+    "build": "npm run build --prefix client",  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mern", "react", "express", "node", "mongodb", "periodic table of elements", "elements", "chemistry"],
+  "author": "Mir Ali",
+  "license": "ISC"
+}
