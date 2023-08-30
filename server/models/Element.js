@@ -26,6 +26,21 @@ const elementSchema = new mongoose.Schema({
   electron_configuration: String,
   electron_affinity: Number,
   electronegativity_pauling: Number,
+
+  // Missing properties and their data types:
+  group: Number,
+  bohr_model_image: String,
+  bohr_model_3d: String,
+  wxpos: Number,
+  wypos: Number,
+  electron_configuration_semantic: String,
+  cpk_hex: String,
+  image: {
+    title: String,
+    url: String,
+    attribution: String,
+  },
+  block: String,
 });
 
 const Element = mongoose.model("Element", elementSchema);

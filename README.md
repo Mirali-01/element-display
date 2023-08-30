@@ -1,0 +1,1 @@
+Data From: [Periodic-Table-JSON](https://github.com/Bowserinator/Periodic-Table-JSON)

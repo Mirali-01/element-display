@@ -25,14 +25,11 @@ mongoose
       // Seed data example
       const seedData = [
         {
-          shells: [1],
-          ionization_energies: [1312],
           name: "Hydrogen",
           appearance: "colorless gas",
           atomic_mass: 1.008,
           boil: 20.271,
           category: "diatomic nonmetal",
-          color: null,
           density: 0.08988,
           discovered_by: "Henry Cavendish",
           melt: 13.99,
@@ -40,8 +37,13 @@ mongoose
           named_by: "Antoine Lavoisier",
           number: 1,
           period: 1,
+          group: 1,
           phase: "Gas",
           source: "https://en.wikipedia.org/wiki/Hydrogen",
+          bohr_model_image:
+            "https://storage.googleapis.com/search-ar-edu/periodic-table/element_001_hydrogen/element_001_hydrogen_srp_th.png",
+          bohr_model_3d:
+            "https://storage.googleapis.com/search-ar-edu/periodic-table/element_001_hydrogen/element_001_hydrogen.glb",
           spectral_img:
             "https://en.wikipedia.org/wiki/File:Hydrogen_Spectra.jpg",
           summary:
@@ -49,9 +51,23 @@ mongoose
           symbol: "H",
           xpos: 1,
           ypos: 1,
+          wxpos: 1,
+          wypos: 1,
+          shells: [1],
           electron_configuration: "1s1",
+          electron_configuration_semantic: "1s1",
           electron_affinity: 72.769,
           electronegativity_pauling: 2.2,
+          ionization_energies: [1312],
+          cpk_hex: "ffffff",
+          image: {
+            title:
+              "Vial of glowing ultrapure hydrogen, H2. Original size in cm: 1 x 5",
+            url: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hydrogenglow.jpg",
+            attribution:
+              "User:Jurii, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons, source: https://images-of-elements.com/hydrogen.php",
+          },
+          block: "s",
         },
       ];
 
