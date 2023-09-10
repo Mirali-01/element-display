@@ -22,15 +22,12 @@ mongoose
     console.log("Connected to MongoDB");
 
     // Check if data exists before seeding
-    // if (elementsCount === 0) {
-    // const elementsCount = await Element.countDocuments();
     const allElementsCount = await AllElements.countDocuments();
     if (allElementsCount === 0) {
       try {
         const rawData = fs.readFileSync("template.json");
         const seedData = JSON.parse(rawData);
 
-        // await Element.insertMany(seedData);
         await AllElements.create(seedData);
 
         // Extract elements from seedData and save them individually
