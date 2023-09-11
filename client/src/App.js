@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     async function fetchElements() {
       try {
-        const response = await axios.get("http://localhost:5000/api/elements");
+        const response = await axios.get("http://localhost:5000/");
         setElements(response.data);
       } catch (error) {
         console.error("Error fetching elements:", error);

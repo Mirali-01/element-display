@@ -17,7 +17,7 @@ router.get("/elements", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const allElements = await AllElements.find();
-    res.json(allElements);
+    res.json(allElements[0]);
   } catch (error) {
     console.error("Error fetching elements:", error);
     res.status(500).json({ error: "Internal server error" });
