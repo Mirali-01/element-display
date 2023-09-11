@@ -14,7 +14,7 @@ router.get("/elements", async (req, res) => {
   }
 });
 
-router.get("/allElements", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const allElements = await AllElements.find();
     res.json(allElements);

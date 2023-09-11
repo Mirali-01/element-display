@@ -50,7 +50,7 @@ mongoose
   });
 
 // Use API routes
-app.use("/api", ElementRouter);
+app.use("/", ElementRouter);
 
 // Start the server
 const PORT = process.env.PORT;
